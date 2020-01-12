@@ -1,0 +1,23 @@
+body {
+    font-family:sans-serif;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+ul#ingredients-list {
+    list-style: square inside;
+} 
+
+ol#directions {
+    list-style: upper-roman inside;
+}
+
+header img {
+    width:  100px;
+}
