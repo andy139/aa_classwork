@@ -97,46 +97,75 @@ def bad_two_sum?(arr,target)
 
 end
 
-def okay_two_sum?(arr,target)
+# def okay_two_sum?(arr,target)
 
-  arr.sort!
+#   arr.sort!
 
-  arr.each do |ele|
+#   arr.each do |ele|
     
-    result = bsearch(arr,target-ele, ele)
-    return true if !result.nil?
-  end
+#     result = bsearch(arr,target-ele, ele)
+#     return true if !result.nil?
+#   end
 
-  return false
+#   return false
 
-end
+# end
 
-def bsearch(arr,target)
-  return nil if arr.empty?
+# def bsearch(arr,target)
+#   return nil if arr.empty?
 
-  mid = arr.length/2
-  case target <=> arr[mid]
-  when 0
-    return mid
-  when 1
-    result = bsearch(arr[mid+1..-1], target)
-    return result + mid + 1 if !result.nil?
-  when -1
-    return bsearch(arr[0...mid],target)
-  end
+#   mid = arr.length/2
+#   case target <=> arr[mid]
+#   when 0
+#     return mid
+#   when 1
+#     result = bsearch(arr[mid+1..-1], target)
+#     return result + mid + 1 if !result.nil?
+#   when -1
+#     return bsearch(arr[0...mid],target)
+#   end
 
-  return nil
+#   return nil
 
-end
+# end
+
+# arr = [0, 1, 5, 7]
+# p okay_two_sum?(arr, 6) # => should be true
+# p okay_two_sum?(arr, 10) # => should be false
+
 
 arr = [0, 1, 5, 7]
-p okay_two_sum?(arr, 6) # => should be true
-p okay_two_sum?(arr, 10) # => should be false
+
+require "byebug"
+def good_two_sum?(arr, target_sum)
+  complements = {}
+  
+  arr.each do |el|
+    return true if complements[target_sum - el]
+    complements[el] = true
+  end
+
+  false
+end
+
+
+def two_sum_indices(arr, target)
+  hash = {}
+
+  arr.each.with_index do |num,i|
+    complement, j = hash[target-num]
+    return [i,j] if j
+    
+    hash[num] = [num, i]
+  end
+
+  hash
+
+
+
+end
 
 
 
 
-
-
-
-
+p two_sum_indices(arr,6)
