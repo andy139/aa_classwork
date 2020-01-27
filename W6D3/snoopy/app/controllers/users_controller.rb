@@ -18,8 +18,10 @@ class UsersController < ApplicationController
 
 
   end
-
+  require "byebug"
   def show
+
+    debugger
     render json: params
   end
 
