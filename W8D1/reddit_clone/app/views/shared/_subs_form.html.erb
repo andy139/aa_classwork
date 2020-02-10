@@ -1,0 +1,24 @@
+
+<form action="<%= action %>" method="post"> 
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>"> 
+
+  <% if http_verb == "patch" %>
+    <input type="hidden" name="_method" value="patch">
+  <% end %>
+
+  <input type="hidden" name="sub[moderator_id]" 
+    value="<%= current_user.id %>"> 
+  <label for="">Sub-reddit title
+    <input type="text" name="sub[title]" value="<%= sub.title %>">
+  </label>
+  <br>
+  <br>
+
+  <label for="">Details 
+    <input type="text" name="sub[description]" value="<%= sub.description %>">
+  </label>
+  <br>
+  <button><%= button_text %></button>
+  
+</form>
+

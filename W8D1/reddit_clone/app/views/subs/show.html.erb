@@ -1,0 +1,17 @@
+<h1>Subs#show</h1>
+<p>Find me in app/views/subs/show.html.erb</p>
+
+<%= render "shared/subs_show", sub: @sub %>
+<br>
+<ul>
+  <% @sub.posts.each do |post| %>
+    <li>
+      <%= link_to post.title, post_url(post) %>
+    </li>
+  <% end %>
+</ul>
+
+<br>
+
+
+<%= link_to "Make a New Post", new_post_url %>

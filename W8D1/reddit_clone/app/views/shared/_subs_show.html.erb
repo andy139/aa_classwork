@@ -1,0 +1,17 @@
+<h4> Title: <%= sub.title %> </h4>
+
+<p>
+  Description: <%= sub.description %>
+</p>
+
+
+<p> 
+  Moderator: <%= User.find_by(id: sub.moderator_id).username %>
+</p>
+
+ <%= link_to "Edit This Sub", edit_sub_url(sub) %>
+
+<% if current_user.id == sub.moderator_id %>
+ 
+
+<% end %>

@@ -1470,3 +1470,359 @@ Processing by BandsController#show as HTML
 Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 5.3ms)
 
 
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ spec/rails_helper.rb:30
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[36mUser Exists (7.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "L1-3jwXjduqnj7tNNjm7kw"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:4
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ spec/rails_helper.rb:30
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[36mUser Exists (2.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "sYFDpT9Ij4QoWka2DCpLCg"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:10
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "fibd8FyeStb9v_ybz8_VPQ"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:11
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "vxU7VHWbrOlk7ChkNZAMEA"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:12
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "vxU7VHWbrOlk7ChkNZAMEA"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (2.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (3.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "FWTDcF9WgtZlKCZrdep_xA"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:19
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "WzL-aKdo_9gbHHeFWLR2ag"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  ↳ app/models/user.rb:29
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "evWIXeIACm-jwlFS_-O_rA"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:29
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "jonathan@fakesite.com"], ["password_digest", "$2a$12$8..3OFb13Pv0/l/X.ILvsuvvU1vB0jFx9M57HSv3Sw2lylp3haEmm"], ["session_token", "evWIXeIACm-jwlFS_-O_rA"], ["created_at", "2020-01-29 06:08:05.500981"], ["updated_at", "2020-01-29 06:08:05.500981"]]
+  ↳ app/models/user.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  ↳ app/models/user.rb:29
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  ↳ app/models/user.rb:29
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "ZUbRD8FS68eezLjRLKAdFA"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:29
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "jonathan@fakesite.com"], ["password_digest", "$2a$12$jLHey12wYcPRdKY/UU8TJuON3ReOCPaob0UCHl3ScpZnv74X7ehJy"], ["session_token", "ZUbRD8FS68eezLjRLKAdFA"], ["created_at", "2020-01-29 06:08:05.829926"], ["updated_at", "2020-01-29 06:08:05.829926"]]
+  ↳ app/models/user.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  ↳ app/models/user.rb:29
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  ↳ spec/models/user_spec.rb:49
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "-9ZmHz1Zhktqxp6cLyGB9g"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:49
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "jonathan@fakesite.com"], ["password_digest", "$2a$12$GJrmCJLRTJJgVpN9Pp4qXefQ13GmnZKrfLcUSMtag../icm9OqHWq"], ["session_token", "-9ZmHz1Zhktqxp6cLyGB9g"], ["created_at", "2020-01-29 06:08:07.459562"], ["updated_at", "2020-01-29 06:08:07.459562"]]
+  ↳ spec/models/user_spec.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  ↳ spec/models/user_spec.rb:49
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jonathan@fakesite.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:49
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  ↳ spec/models/user_spec.rb:49
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "mgEQD6li3nMuT1d3AuBv3w"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:49
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "jonathan@fakesite.com"], ["password_digest", "$2a$12$bvJd9flGKdiNgpTJHTrZyuZT0JbauibRQt6dCEh6cHEowdvlJFV82"], ["session_token", "mgEQD6li3nMuT1d3AuBv3w"], ["created_at", "2020-01-29 06:08:08.102880"], ["updated_at", "2020-01-29 06:08:08.102880"]]
+  ↳ spec/models/user_spec.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  ↳ spec/models/user_spec.rb:49
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jonathan@fakesite.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:49
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ spec/rails_helper.rb:30
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[36mUser Exists (2.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "EFsujwYU-KciW8gFb6nwCA"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:10
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "EFsujwYU-KciW8gFb6nwCA"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:10
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "wTiORoJIUL7zwS6iB866bg"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:11
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "wTiORoJIUL7zwS6iB866bg"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:11
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "krIyFY0C0nuconJbLTlGjw"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:12
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "krIyFY0C0nuconJbLTlGjw"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:12
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[36mUser Exists (2.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "gPXxdIeVjrsyDKM9gsk1lA"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:19
+  [1m[35m (2.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "eXqJ6j6fpdEqO2QSavaCFQ"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  ↳ app/models/user.rb:26
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "j1RtXXhNgxoMRu03wJtXEg"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:26
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "jonathan@fakesite.com"], ["password_digest", "$2a$12$klSeqLZHCE4Pvs9XJ09e8OLeMq.fqqWAWLIyNX2JnosHuzEPPAJry"], ["session_token", "j1RtXXhNgxoMRu03wJtXEg"], ["created_at", "2020-01-29 06:10:41.002627"], ["updated_at", "2020-01-29 06:10:41.002627"]]
+  ↳ app/models/user.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  ↳ app/models/user.rb:26
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  ↳ app/models/user.rb:26
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BU84d_t5zKZ7RtbNpOImRQ"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:26
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "jonathan@fakesite.com"], ["password_digest", "$2a$12$OV9Ag18bAVDulrxEJFjtsudPIk2HKAIsnpUzPjNDmy1yh9Cbxvvgq"], ["session_token", "BU84d_t5zKZ7RtbNpOImRQ"], ["created_at", "2020-01-29 06:10:41.356448"], ["updated_at", "2020-01-29 06:10:41.356448"]]
+  ↳ app/models/user.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  ↳ app/models/user.rb:26
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (4.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  ↳ spec/models/user_spec.rb:49
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "K_Rjt7P31WWr-CwsQkWCzg"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:49
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "jonathan@fakesite.com"], ["password_digest", "$2a$12$bIR.n8EV4Dm7osOXglxsEeYVxPwdNSVAywEvcoaLnqZbFGIyQwbju"], ["session_token", "K_Rjt7P31WWr-CwsQkWCzg"], ["created_at", "2020-01-29 06:10:43.002515"], ["updated_at", "2020-01-29 06:10:43.002515"]]
+  ↳ spec/models/user_spec.rb:49
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  ↳ spec/models/user_spec.rb:49
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jonathan@fakesite.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:46
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  ↳ spec/models/user_spec.rb:49
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "1_FwElWsPOgoYS8a7d-E5g"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:49
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "jonathan@fakesite.com"], ["password_digest", "$2a$12$53vaqFd4V4X4FmxVgzj6OOivqP2eI81z0FNa1qvqiWXZreGH5wWay"], ["session_token", "1_FwElWsPOgoYS8a7d-E5g"], ["created_at", "2020-01-29 06:10:43.640981"], ["updated_at", "2020-01-29 06:10:43.640981"]]
+  ↳ spec/models/user_spec.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  ↳ spec/models/user_spec.rb:49
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jonathan@fakesite.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:46
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ spec/rails_helper.rb:30
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[36mUser Exists (3.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "R9RWdvSfXs9F4_q6DT9KVQ"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:10
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "R9RWdvSfXs9F4_q6DT9KVQ"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:10
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "17xdoD8SZGvE-_WYCUbT2A"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:11
+  [1m[36mUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "17xdoD8SZGvE-_WYCUbT2A"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:11
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "jTiUiYU_mj8NiVt0mV0WAw"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:12
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "jTiUiYU_mj8NiVt0mV0WAw"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:12
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (1.9ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ spec/rails_helper.rb:30
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[36mUser Exists (2.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "DpceOQYS8Zwf2xWudCR2zg"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:10
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "DpceOQYS8Zwf2xWudCR2zg"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:10
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XNMeLZwG05AO8uXGqzb1og"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:11
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XNMeLZwG05AO8uXGqzb1og"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:11
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[36mUser Exists (9.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "6jmJDkpDS8pJGmDN9JQH7g"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:12
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "6jmJDkpDS8pJGmDN9JQH7g"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pfz9CeByNudjv_Ge_KxNAA"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:19
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "HoxBREpof3eDVJTyJaksTw"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  ↳ app/models/user.rb:26
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "t1T9aIYOacW4PN7-qZJ4nA"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:26
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "jonathan@fakesite.com"], ["password_digest", "$2a$12$PFrQbC5zV2bE03QaNeuI2OcIh6WSCDZMyj42ArCk42yqKEGmKj3/a"], ["session_token", "t1T9aIYOacW4PN7-qZJ4nA"], ["created_at", "2020-01-29 16:48:15.655036"], ["updated_at", "2020-01-29 16:48:15.655036"]]
+  ↳ app/models/user.rb:26
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  ↳ app/models/user.rb:26
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  ↳ app/models/user.rb:26
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "QPONnbHZRQXcwpAO1_OT8w"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:26
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "jonathan@fakesite.com"], ["password_digest", "$2a$12$cHbq6Y8qak2..juwPaC6puMLHd8Q1.B8lBRsKnTYEVDGfd9mWAD2a"], ["session_token", "QPONnbHZRQXcwpAO1_OT8w"], ["created_at", "2020-01-29 16:48:15.926940"], ["updated_at", "2020-01-29 16:48:15.926940"]]
+  ↳ app/models/user.rb:26
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  ↳ app/models/user.rb:26
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  ↳ spec/models/user_spec.rb:49
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "rdDvJARjGAcThXjFy3GduA"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:49
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "jonathan@fakesite.com"], ["password_digest", "$2a$12$Sb3EBEd/icYMN2SJ3BdxeefbrrkLQBvtPi05oIh66TJyFhOAgfLwS"], ["session_token", "rdDvJARjGAcThXjFy3GduA"], ["created_at", "2020-01-29 16:48:17.259691"], ["updated_at", "2020-01-29 16:48:17.259691"]]
+  ↳ spec/models/user_spec.rb:49
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  ↳ spec/models/user_spec.rb:49
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jonathan@fakesite.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:46
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  ↳ spec/models/user_spec.rb:49
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Zuo6tJaB_lM8jeOZ_ErYfg"], ["LIMIT", 1]]
+  ↳ spec/models/user_spec.rb:49
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "jonathan@fakesite.com"], ["password_digest", "$2a$12$qFaN0EgbJpYMumZTN1x3XublhkWEPR6eYy03oFRnXAfCh3p51n1FC"], ["session_token", "Zuo6tJaB_lM8jeOZ_ErYfg"], ["created_at", "2020-01-29 16:48:17.816754"], ["updated_at", "2020-01-29 16:48:17.816754"]]
+  ↳ spec/models/user_spec.rb:49
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  ↳ spec/models/user_spec.rb:49
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jonathan@fakesite.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:46
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/andy139/.rbenv/versions/2.5.1/bin/rspec:23
