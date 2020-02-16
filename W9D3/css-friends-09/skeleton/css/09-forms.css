@@ -1,0 +1,12 @@
+/* PHASE 9: Forms */
+.input {
+  display: flex;
+}
+
+.input > .thumb {
+  flex: left;
+}
+
+.input > form {
+  flex: right;
+}
